@@ -454,7 +454,7 @@ const App = (props) => {
             <Tooltip ref={copyTooltipRef} target=".block-action-copy" position="bottom" content="Copied to clipboard" event="focus" />
 
             <div className="layout-main">
-                <AppTopbar
+                {/* <AppTopbar
                     items={menu}
                     menuMode={menuMode}
                     colorScheme={props.colorScheme}
@@ -492,45 +492,21 @@ const App = (props) => {
                     resetActiveIndex={resetActiveIndex}
                 />
 
-                <AppBreadcrumb routes={routes} onMenuButtonClick={onMenuButtonClick} menuMode={menuMode} onRightMenuButtonClick={onRightMenuButtonClick} onInputClick={onInputClick} searchActive={searchActive} breadcrumbClick={breadcrumbClick} />
+                <AppBreadcrumb routes={routes} onMenuButtonClick={onMenuButtonClick} menuMode={menuMode} onRightMenuButtonClick={onRightMenuButtonClick} onInputClick={onInputClick} searchActive={searchActive} breadcrumbClick={breadcrumbClick} /> */}
 
                 <div className="layout-main-content">
                     <Routes>
                         <Route path="/" exact="true" element={<Dashboard />} />
-                        <Route path="/documentation" element={<Documentation />} />
-                        <Route path="/formlayout" element={<FormLayoutDemo />} />
-                        <Route path="/floatlabel" element={<FloatLabelDemo />} />
-                        <Route path="/input" element={<InputDemo />} />
-                        <Route path="/invalidstate" element={<InvalidStateDemo />} />
-                        <Route path="/button" element={<ButtonDemo />} />
-                        <Route path="/table" element={<TableDemo />} />
-                        <Route path="/list" element={<ListDemo />} />
-                        <Route path="/tree" element={<TreeDemo />} />
-                        <Route path="/panel" element={<PanelDemo />} />
-                        <Route path="/overlay" element={<OverlayDemo />} />
-                        <Route path="/menu/*" element={<MenuDemo />} />
-                        <Route path="/message" element={<MessagesDemo />} />
-                        <Route path="/media" element={<MediaDemo />} />
-                        <Route path="/file" element={<FileDemo />} />
-                        <Route path="/chart" element={<ChartDemo colorMode={props.colorScheme} location={location} />} />
-                        <Route path="/misc" element={<MiscDemo />} />
-                        <Route path="/blocks" element={<BlocksDemo />} />
-                        <Route path="/icons" element={<IconsDemo />} />
-                        <Route path="/crud" element={<CrudDemo />} />
-                        <Route path="/calendar" element={<CalendarDemo />} />
-                        <Route path="/help" element={<Help />} />
-                        <Route path="/invoice" element={<Invoice colorMode={props.colorScheme} location={location} />} />
-                        <Route path="/empty" element={<EmptyPage />} />
-                        <Route path="/timeline" element={<TimelineDemo />} />
+                        
                     </Routes>
                 </div>
 
-                <AppFooter colorScheme={props.colorScheme} />
+                {/* <AppFooter colorScheme={props.colorScheme} /> */}
             </div>
 
-            <AppRightMenu rightMenuActive={rightMenuActive} onRightMenuClick={onRightMenuClick} onRightMenuActiveChange={onRightMenuActiveChange} />
+            {/* <AppRightMenu rightMenuActive={rightMenuActive} onRightMenuClick={onRightMenuClick} onRightMenuActiveChange={onRightMenuActiveChange} /> */}
 
-            <AppConfig
+            {/* <AppConfig
                 configActive={configActive}
                 onConfigButtonClick={onConfigButtonClick}
                 onConfigClick={onConfigClick}
@@ -544,7 +520,7 @@ const App = (props) => {
                 changeComponentTheme={props.onComponentThemeChange}
                 ripple={ripple}
                 onRippleChange={onRippleChange}
-            />
+            /> */}
         </div>
     );
 };
